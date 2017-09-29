@@ -7,12 +7,12 @@ package com.jorgesoasti.petagram2;
 public class Mascota {
 
     private int foto;
-    private String Nombre;
-    private int likes;
+    private String nombre;
+    private String likes;
 
-    public Mascota(int foto, String nombre, int likes) {
+    public Mascota(int foto, String nombre, String likes) {
         this.foto = foto;
-        Nombre = nombre;
+        this.nombre = nombre;
         this.likes = likes;
     }
 
@@ -25,18 +25,18 @@ public class Mascota {
     }
 
     public String getNombre() {
-        return Nombre;
+        return nombre;
     }
 
     public void setNombre(String nombre) {
-        Nombre = nombre;
+        this.nombre = nombre;
     }
 
-    public int getLikes() {
+    public String getLikes() {
         return likes;
     }
 
-    public void setLikes(int likes) {
+    public void setLikes(String likes) {
         this.likes = likes;
     }
 }

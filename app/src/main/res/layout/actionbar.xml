@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tlbMiActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:elevation="4dp"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="0dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:background="@drawable/pet"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight='8'
+            android:text="Petagram"
+            android:textSize="25dp"
+            android:textColor="@color/colorTextPrimaryColor"
+            android:textAlignment="center" />
+
+        <ImageButton
+            android:id="@+id/btnFavoritos"
+            android:layout_width="0dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:background="@drawable/star"
+            android:onClick="irFavoritos"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>
