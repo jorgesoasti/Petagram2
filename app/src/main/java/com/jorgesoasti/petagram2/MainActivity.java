@@ -15,6 +15,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -32,7 +33,8 @@ public class MainActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         getSupportActionBar().setCustomView(R.layout.miactionbar);
 
-        final ImageView img = actionBar.getCustomView().findViewById(R.id.imgLogo);
+        //final ImageView  img = actionBar.getCustomView().findViewById(R.id.imgLogo);
+        //final TextView titulo = actionBar.getCustomView().findViewById(R.id.tvTituloApp);
 
         actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM|ActionBar.DISPLAY_SHOW_HOME);
 
